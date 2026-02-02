@@ -1,169 +1,462 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmileBookingPro</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmileBookingPro — AI Booking + Automation for Clinics</title>
+  <meta name="description" content="AI receptionist + WhatsApp/SMS reminders + online scheduling. Stop missed calls. Reduce no-shows. Book more patients automatically." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Grow Your Clinic With AI – No More Missed Appointments</h1>
-            <p>Your AI assistant handles scheduling, reminders, and patient follow-ups automatically.</p>
-            <div class="cta-buttons">
-                <a href="#pricing" class="btn primary">Start Free Demo</a>
-                <a href="#pricing" class="btn secondary">See Pricing</a>
-            </div>
-        </div>
-    </section>
+  <!-- Top Banner -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="topbar-pill">⚡ Live clinics onboarding in <b>10 minutes</b></span>
+      <span class="topbar-text">No contracts • Cancel anytime • “Free Demo — No pressure”</span>
+      <a class="topbar-link" href="#pricing">See Pricing →</a>
+    </div>
+  </div>
 
-    <!-- How It Works Section -->
-    <section class="how-it-works">
-        <h2>How It Works</h2>
-        <div class="steps">
-            <div class="step">
-                <i class="fas fa-plug"></i>
-                <h3>Step 1: Connect WhatsApp</h3>
-                <p>Connect your clinic’s WhatsApp number for seamless communication.</p>
-            </div>
-            <div class="step">
-                <i class="fas fa-calendar-plus"></i>
-                <h3>Step 2: Add Services & Timings</h3>
-                <p>Enter your services and available appointment times.</p>
-            </div>
-            <div class="step">
-                <i class="fas fa-robot"></i>
-                <h3>Step 3: AI Handles All Bookings</h3>
-                <p>Our AI takes care of scheduling, reminders, and follow-ups automatically.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">SBP</span>
+        <span class="brand-name">SmileBookingPro</span>
+      </a>
 
-    <!-- Benefits Section -->
-    <section class="benefits">
-        <h2>Benefits</h2>
-        <div class="benefits-list">
-            <div class="benefit-item">
-                <i class="fas fa-clock"></i>
-                <h3>Save Staff Time</h3>
-                <p>Automate repetitive tasks so your staff can focus on care.</p>
-            </div>
-            <div class="benefit-item">
-                <i class="fas fa-arrow-up"></i>
-                <h3>Increase Bookings</h3>
-                <p>Never miss an appointment with 24/7 scheduling.</p>
-            </div>
-            <div class="benefit-item">
-                <i class="fas fa-calendar-check"></i>
-                <h3>Reduce No-Shows</h3>
-                <p>Send automated reminders via WhatsApp and SMS.</p>
-            </div>
-            <div class="benefit-item">
-                <i class="fas fa-comments"></i>
-                <h3>Instant Replies</h3>
-                <p>AI responds instantly to patient inquiries and booking requests.</p>
-            </div>
-            <div class="benefit-item">
-                <i class="fas fa-sync-alt"></i>
-                <h3>Fully Automated Follow-Up</h3>
-                <p>Automatically ask for reviews and follow-up after appointments.</p>
-            </div>
-        </div>
-    </section>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#proof">Results</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
 
-    <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
-        <h2>Pricing</h2>
-        <div class="pricing-plans">
-            <div class="plan">
-                <h3>Starter</h3>
-                <p class="price">$49/mo</p>
-                <ul>
-                    <li>Basic AI Receptionist</li>
-                    <li>WhatsApp & SMS reminders</li>
-                    <li>Online booking</li>
-                </ul>
-                <a href="#" class="btn primary">Free Demo – No Pressure</a>
-            </div>
-            <div class="plan">
-                <h3>Pro</h3>
-                <p class="price">$99/mo</p>
-                <ul>
-                    <li>Everything in Starter</li>
-                    <li>Advanced follow-ups</li>
-                    <li>Analytics dashboard</li>
-                </ul>
-                <a href="#" class="btn primary">Free Demo – No Pressure</a>
-            </div>
-            <div class="plan">
-                <h3>Clinic Pro+</h3>
-                <p class="price">$199/mo</p>
-                <ul>
-                    <li>Everything in Pro</li>
-                    <li>Multi-location support</li>
-                    <li>Dedicated account manager</li>
-                </ul>
-                <a href="#" class="btn primary">Free Demo – No Pressure</a>
-            </div>
-        </div>
-    </section>
+      <div class="header-cta">
+        <a class="btn btn-ghost" href="https://wa.me/17073423698?text=Hi%20I%20want%20a%20SmileBookingPro%20demo%20for%20my%20clinic." target="_blank" rel="noreferrer">WhatsApp Demo</a>
+        <a class="btn btn-primary" href="https://calendly.com/onlineexpert2025/30min" target="_blank" rel="noreferrer">Book Free Demo</a>
+      </div>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h2>Happy Clients</h2>
-        <div class="testimonial-cards">
-            <div class="testimonial-card">
-                <p>“SmileBookingPro has revolutionized our clinic’s scheduling. No missed appointments and happier patients!”</p>
-                <span>- Dr. A, Dentist</span>
-            </div>
-            <div class="testimonial-card">
-                <p>“We’ve seen a 30% increase in bookings since using SmileBookingPro. The AI works like magic!”</p>
-                <span>- Spa Owner</span>
-            </div>
-            <div class="testimonial-card">
-                <p>“Our team saves hours every day thanks to SmileBookingPro’s automation features. Highly recommend!”</p>
-                <span>- Chiropractor</span>
-            </div>
-        </div>
-    </section>
+      <button class="mobile-btn" id="mobileBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
 
-    <!-- FAQ Section -->
-    <section class="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <div class="question">Is it safe?<i class="fas fa-chevron-down"></i></div>
-            <div class="answer">Yes, SmileBookingPro uses secure, encrypted communication to protect patient data.</div>
-        </div>
-        <div class="faq-item">
-            <div class="question">How does AI talk to patients?<i class="fas fa-chevron-down"></i></div>
-            <div class="answer">The AI uses natural language processing to understand and respond to patients just like a human receptionist.</div>
-        </div>
-        <div class="faq-item">
-            <div class="question">Can I cancel anytime?<i class="fas fa-chevron-down"></i></div>
-            <div class="answer">Absolutely! You can cancel your subscription at any time with no extra fees.</div>
-        </div>
-        <div class="faq-item">
-            <div class="question">Do I need technical skills?<i class="fas fa-chevron-down"></i></div>
-            <div class="answer">No. SmileBookingPro is designed for easy setup with no technical knowledge required.</div>
-        </div>
-    </section>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#proof">Results</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <div class="mobile-cta">
+        <a class="btn btn-ghost" href="https://wa.me/17073423698?text=Hi%20I%20want%20a%20SmileBookingPro%20demo%20for%20my%20clinic." target="_blank" rel="noreferrer">WhatsApp Demo</a>
+        <a class="btn btn-primary" href="https://calendly.com/onlineexpert2025/30min" target="_blank" rel="noreferrer">Book Free Demo</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or need help? Reach out to us!</p>
-        <p><a href="mailto:support@smilebookingpro.com">support@smilebookingpro.com</a></p>
-        <p><a href="https://wa.me/1000000000">WhatsApp Us</a></p>
-        <a href="#pricing" class="btn primary">Start Free Demo</a>
-    </section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left reveal">
+        <div class="badge">
+          <span class="dot"></span>
+          AI Receptionist + WhatsApp/SMS Reminders + Online Scheduling
+        </div>
 
-    <script src="script.js"></script>
+        <h1 class="hero-title">
+          Stop Missed Calls. <span class="glow">Book More Patients</span>. <br />
+          Automatically.
+        </h1>
+
+        <p class="hero-subtitle">
+          SmileBookingPro answers patients 24/7, schedules instantly, sends reminders,
+          and follows up for reviews — so your clinic grows without hiring extra staff.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="https://calendly.com/onlineexpert2025/30min" target="_blank" rel="noreferrer">
+            Book Free Demo
+            <span class="btn-arrow">→</span>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#pricing">
+            See Pricing
+          </a>
+        </div>
+
+        <div class="trust-row">
+          <div class="trust-item">
+            <div class="trust-num">24/7</div>
+            <div class="trust-label">Instant replies</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-num">↓ No-Shows</div>
+            <div class="trust-label">Automated reminders</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-num">10 min</div>
+            <div class="trust-label">Fast onboarding</div>
+          </div>
+        </div>
+
+        <div class="microproof">
+          <span class="shield">🔒</span>
+          Secure + clinic-friendly. No technical skills required.
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <div class="hc-title">Live Demo Preview</div>
+            <div class="hc-pill">AI Active</div>
+          </div>
+
+          <div class="chat">
+            <div class="msg you">
+              “Hi, I want a cleaning appointment tomorrow.”
+            </div>
+            <div class="msg ai">
+              Sure! I can help. Which time works best — morning or afternoon?
+            </div>
+            <div class="msg you">
+              “Afternoon.”
+            </div>
+            <div class="msg ai">
+              Great. I have 2:30pm or 4:00pm. Want to book 2:30pm?
+            </div>
+            <div class="msg ai">
+              ✅ Confirmed. I’ll send a WhatsApp reminder 24h + 2h before.
+            </div>
+          </div>
+
+          <div class="hero-card-bottom">
+            <a class="mini-btn" href="https://calendly.com/onlineexpert2025/30min" target="_blank" rel="noreferrer">Book Demo</a>
+            <span class="mini-note">Free demo • No pressure</span>
+          </div>
+        </div>
+
+        <div class="floating">
+          <div class="float-card">
+            <span class="f-ico">📅</span>
+            <span class="f-text">Calendar sync</span>
+          </div>
+          <div class="float-card">
+            <span class="f-ico">💬</span>
+            <span class="f-text">WhatsApp + SMS</span>
+          </div>
+          <div class="float-card">
+            <span class="f-ico">⭐</span>
+            <span class="f-text">Review follow-ups</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- Pain → Solution -->
+  <section class="section">
+    <div class="container">
+      <div class="split reveal">
+        <div>
+          <h2 class="h2">Most clinics lose money from small problems.</h2>
+          <p class="p">
+            Missed calls, slow replies, forgotten follow-ups, and no-shows quietly kill revenue.
+            SmileBookingPro fixes them automatically — and pushes bookings hard.
+          </p>
+        </div>
+        <div class="pill-grid">
+          <div class="pill">❌ Missed calls</div>
+          <div class="pill">❌ Late replies</div>
+          <div class="pill">❌ No-shows</div>
+          <div class="pill">❌ Weak follow-ups</div>
+          <div class="pill">✅ Instant booking</div>
+          <div class="pill">✅ Reminders</div>
+          <div class="pill">✅ Review requests</div>
+          <div class="pill">✅ More revenue</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <div class="center reveal">
+        <h2 class="h2">High-Tech Features That Sell (and actually work)</h2>
+        <p class="p">Built for dentists, med-spas, chiropractors, cosmetic clinics, and wellness centers.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card reveal">
+          <div class="ico">🤖</div>
+          <h3>AI Receptionist 24/7</h3>
+          <p>Answers instantly, handles questions, and books appointments anytime — even after hours.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="ico">📲</div>
+          <h3>WhatsApp + SMS Reminders</h3>
+          <p>Automatic reminders (24h + 2h) so patients show up — and no-shows drop hard.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="ico">📅</div>
+          <h3>Online Scheduling + Calendar Sync</h3>
+          <p>Connect your calendar and service timings. Patients book instantly without staff calls.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="ico">⚡</div>
+          <h3>Lead Capture + Instant Replies</h3>
+          <p>New lead? Instant response. Stop losing prospects to faster clinics.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="ico">⭐</div>
+          <h3>Review Follow-ups</h3>
+          <p>Auto request reviews after visits to boost reputation and ranking.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="ico">💸</div>
+          <h3>Cheaper Than Hiring Staff</h3>
+          <p>One tool replaces hours of admin work. Works for small clinics and multi-locations.</p>
+        </div>
+      </div>
+
+      <div class="cta-strip reveal">
+        <div>
+          <div class="cta-strip-title">Want more bookings this week?</div>
+          <div class="cta-strip-sub">Book a free demo and we’ll show your exact workflow.</div>
+        </div>
+        <a class="btn btn-primary" href="https://calendly.com/onlineexpert2025/30min" target="_blank" rel="noreferrer">Book Free Demo →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section" id="how">
+    <div class="container">
+      <div class="center reveal">
+        <h2 class="h2">How It Works</h2>
+        <p class="p">3 steps. No tech skills. No headache.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">1</div>
+          <h3>Connect WhatsApp</h3>
+          <p>Connect your clinic number. We verify and go live.</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-num">2</div>
+          <h3>Add Services & Timings</h3>
+          <p>Set your services, durations, and availability.</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-num">3</div>
+          <h3>AI Books & Reminds</h3>
+          <p>AI handles bookings, reminders, follow-ups, and reviews.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof / Results -->
+  <section class="section section-alt" id="proof">
+    <div class="container">
+      <div class="center reveal">
+        <h2 class="h2">Results Clinics Care About</h2>
+        <p class="p">Aggressive automation that turns inquiries into booked appointments.</p>
+      </div>
+
+      <div class="stats">
+        <div class="stat reveal">
+          <div class="stat-big">⚡ Faster</div>
+          <div class="stat-small">Instant replies → more bookings</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat-big">📉 Lower</div>
+          <div class="stat-small">No-shows with reminders</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat-big">⭐ More</div>
+          <div class="stat-small">Reviews via follow-ups</div>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <div class="tcard reveal">
+          <p>“We stopped missing inquiries. Bookings increased and staff stress dropped.”</p>
+          <span>— Dentist Owner</span>
+        </div>
+        <div class="tcard reveal">
+          <p>“Patients love WhatsApp reminders. No-shows went down fast.”</p>
+          <span>— Med-Spa Manager</span>
+        </div>
+        <div class="tcard reveal">
+          <p>“This feels like hiring a full-time receptionist… without the payroll.”</p>
+          <span>— Chiropractic Clinic</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="center reveal">
+        <h2 class="h2">Pricing That Beats Hiring Staff</h2>
+        <p class="p">All plans include onboarding support. Cancel anytime.</p>
+      </div>
+
+      <div class="pricing">
+        <div class="price-card reveal">
+          <div class="price-top">
+            <h3>Starter</h3>
+            <div class="price">$49<span>/mo</span></div>
+          </div>
+          <ul>
+            <li>✅ AI receptionist (basic)</li>
+            <li>✅ Online booking</li>
+            <li>✅ WhatsApp + SMS reminders</li>
+            <li>✅ One clinic number</li>
+          </ul>
+          <a class="btn btn-ghost w100" href="https://calendly.com/onlineexpert2025/30min" target="_blank" rel="noreferrer">Book Free Demo</a>
+          <div class="tiny">Free demo — no pressure</div>
+        </div>
+
+        <div class="price-card featured reveal">
+          <div class="ribbon">Most Popular</div>
+          <div class="price-top">
+            <h3>Pro</h3>
+            <div class="price">$99<span>/mo</span></div>
+          </div>
+          <ul>
+            <li>✅ Everything in Starter</li>
+            <li>✅ Advanced follow-ups</li>
+            <li>⚡ Priority reminders</li>
+            <li>📈 Simple analytics</li>
+          </ul>
+          <a class="btn btn-primary w100" href="https://calendly.com/onlineexpert2025/30min" target="_blank" rel="noreferrer">Book Free Demo →</a>
+          <div class="tiny">Best value for growing clinics</div>
+        </div>
+
+        <div class="price-card reveal">
+          <div class="price-top">
+            <h3>Clinic Pro+</h3>
+            <div class="price">$199<span>/mo</span></div>
+          </div>
+          <ul>
+            <li>✅ Everything in Pro</li>
+            <li>🏥 Multi-location support</li>
+            <li>🚀 Priority setup</li>
+            <li>👤 Dedicated manager</li>
+          </ul>
+          <a class="btn btn-ghost w100" href="https://calendly.com/onlineexpert2025/30min" target="_blank" rel="noreferrer">Book Free Demo</a>
+          <div class="tiny">For larger practices</div>
+        </div>
+      </div>
+
+      <div class="guarantee reveal">
+        <div class="g-ico">🛡️</div>
+        <div>
+          <div class="g-title">Free Demo. No pressure.</div>
+          <div class="g-sub">If it’s not a fit, you walk away. Simple.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <div class="center reveal">
+        <h2 class="h2">FAQ</h2>
+        <p class="p">Quick answers clinics ask before booking a demo.</p>
+      </div>
+
+      <div class="faq">
+        <button class="faq-q" aria-expanded="false">
+          Is it safe?
+          <span class="chev">⌄</span>
+        </button>
+        <div class="faq-a">
+          Yes. We follow secure practices and keep the setup clinic-friendly. You control what’s connected.
+        </div>
+
+        <button class="faq-q" aria-expanded="false">
+          How does AI talk to patients?
+          <span class="chev">⌄</span>
+        </button>
+        <div class="faq-a">
+          It responds in natural language, confirms details, and books according to your rules (services, timings, availability).
+        </div>
+
+        <button class="faq-q" aria-expanded="false">
+          Can I cancel anytime?
+          <span class="chev">⌄</span>
+        </button>
+        <div class="faq-a">
+          Yes. No long contracts. Cancel whenever you want.
+        </div>
+
+        <button class="faq-q" aria-expanded="false">
+          Do I need technical skills?
+          <span class="chev">⌄</span>
+        </button>
+        <div class="faq-a">
+          No. We onboard you in minutes. You just provide your clinic info and availability.
+        </div>
+      </div>
+
+      <div class="center reveal" style="margin-top: 26px;">
+        <a class="btn btn-primary btn-lg" href="https://calendly.com/onlineexpert2025/30min" target="_blank" rel="noreferrer">Book Free Demo →</a>
+        <div class="tiny" style="margin-top: 10px;">You’ll see it working live on a real flow.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact reveal">
+        <div>
+          <h2 class="h2">Ready to stop missed appointments?</h2>
+          <p class="p">Book a demo now. We’ll set it up fast and show the automation in action.</p>
+          <div class="contact-links">
+            <a href="mailto:hello@smilebookingpro.com" class="link">hello@smilebookingpro.com</a>
+            <a href="https://wa.me/17073423698?text=Hi%20I%20want%20a%20SmileBookingPro%20demo%20for%20my%20clinic." target="_blank" rel="noreferrer" class="link">WhatsApp Us</a>
+          </div>
+        </div>
+        <div class="contact-cta">
+          <a class="btn btn-primary btn-lg w100" href="https://calendly.com/onlineexpert2025/30min" target="_blank" rel="noreferrer">Book Free Demo</a>
+          <a class="btn btn-ghost btn-lg w100" href="#pricing">See Pricing</a>
+          <div class="tiny">Free demo • No pressure • Cancel anytime</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> SmileBookingPro. All rights reserved.</div>
+      <div class="footer-right">
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
