@@ -1,0 +1,242 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f7fafd;
+}
+
+/* Typography */
+h1, h2, h3 {
+    margin: 0 0 1rem 0;
+    font-weight: 600;
+}
+
+h2 {
+    color: #007bff;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.btn.primary {
+    background-color: #007bff;
+}
+
+.btn.secondary {
+    background-color: #5c7bd9;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #66b2ff 0%, #3399ff 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons .btn {
+    margin: 10px;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.how-it-works .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 2rem;
+}
+
+.how-it-works .step {
+    max-width: 300px;
+    text-align: center;
+}
+
+.how-it-works .step i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 60px 20px;
+    background-color: #eef5fc;
+}
+
+.benefits-list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 2rem;
+}
+
+.benefit-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.benefit-item i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.pricing-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 2rem;
+}
+
+.plan {
+    max-width: 280px;
+    background-color: #f7fafd;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.plan .price {
+    font-size: 2rem;
+    color: #007bff;
+    margin: 20px 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.plan ul li {
+    margin: 10px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #eef5fc;
+    text-align: center;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    max-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-style: italic;
+    position: relative;
+}
+
+.testimonial-card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+}
+
+.faq-item .question {
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f7fafd;
+    padding: 0 10px;
+    border-left: 4px solid #007bff;
+}
+
+.faq-item .question i {
+    margin-left: 10px;
+    font-size: 0.8rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background-color: #eef5fc;
+    text-align: center;
+}
+
+.contact p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .how-it-works .steps, .pricing-plans, .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
