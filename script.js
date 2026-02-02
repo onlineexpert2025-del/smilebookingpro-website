@@ -1,19 +1,52 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const faqItems = document.querySelectorAll('.faq-item');
+// Mobile menu
+const mobileBtn = document.getElementById("mobileBtn");
+const mobileMenu = document.getElementById("mobileMenu");
 
-    faqItems.forEach(item => {
-        item.addEventListener('click', function() {
-            const answer = this.querySelector('.answer');
-            const icon = this.querySelector('.question i');
-            if (answer.style.maxHeight) {
-                answer.style.maxHeight = null;
-                icon.classList.remove('fa-chevron-up');
-                icon.classList.add('fa-chevron-down');
-            } else {
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-                icon.classList.remove('fa-chevron-down');
-                icon.classList.add('fa-chevron-up');
-            }
-        });
+if (mobileBtn && mobileMenu) {
+  mobileBtn.addEventListener("click", () => {
+    const isOpen = mobileMenu.style.display === "block";
+    mobileMenu.style.display = isOpen ? "none" : "block";
+  });
+
+  // Close menu when clicking a link
+  mobileMenu.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", () => {
+      mobileMenu.style.display = "none";
     });
+  });
+}
+
+// FAQ accordion
+document.querySelectorAll(".faq-q").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const answer = btn.nextElementSibling;
+    const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+    // close all
+    document.querySelectorAll(".faq-q").forEach((b) => b.setAttribute("aria-expanded", "false"));
+    document.querySelectorAll(".faq-a").forEach((a) => (a.style.display = "none"));
+
+    // open current if was closed
+    if (!isOpen) {
+      btn.setAttribute("aria-expanded", "true");
+      answer.style.display = "block";
+    }
+  });
 });
+
+// Reveal on scroll
+const revealEls = Array.from(document.querySelectorAll(".reveal"));
+const onReveal = () => {
+  const trigger = window.innerHeight * 0.88;
+  revealEls.forEach((el) => {
+    const top = el.getBoundingClientRect().top;
+    if (top < trigger) el.classList.add("show");
+  });
+};
+window.addEventListener("scroll", onReveal);
+window.addEventListener("load", onReveal);
+onReveal();
+
+// Footer year
+const y = document.getElementById("year");
+if (y) y.textContent = new Date().getFullYear();
